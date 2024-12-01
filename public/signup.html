@@ -110,9 +110,8 @@
             };
 
             // Validation
-<<<<<<< HEAD
             if (data.password !== data.confirmPassword) {
-=======
+
             const noSpaceRegex = /^[^\s]+$/; // ห้ามมี space ทั้งหมด
             const nameRegex = /^[a-zA-Z]+$/; // Letters only
             const phoneRegex = /^[0-9]{10}$/; // 10 digits only
@@ -149,7 +148,6 @@
             }
 
             if (password !== confirmPassword) {
->>>>>>> 0a2cdcba84c8b26b6df455312a538ac57c95f7e2
                 alert('Passwords do not match.');
                 return;
             }
@@ -174,6 +172,8 @@
                 console.error('Error during registration:', err);
                 alert('An error occurred during registration. Please try again.');
             }
+        }
+
         });
 
         window.addEventListener('resize', function () {
